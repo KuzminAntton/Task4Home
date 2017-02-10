@@ -7,7 +7,10 @@ import com.epam.task3.dao.exception.DAOException;
 import java.io.IOException;
 import java.util.HashSet;
 
-public interface FileDao {
-    HashSet<News> searchNewsInFIle(String request) throws  DAOException;
+public interface WorkWithNewsDataDao {
+
+    HashSet<News> searchNewsForFreeCriteria(String[] request) throws DAOException;
+
     void addItem(String request) throws DAOException;
+
 }

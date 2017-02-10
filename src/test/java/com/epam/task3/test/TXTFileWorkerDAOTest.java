@@ -2,7 +2,7 @@ package com.epam.task3.test;
 
 import com.epam.task3.bean.News;
 import com.epam.task3.dao.DAOFactory;
-import com.epam.task3.dao.txt_file.TXTFileWorkerDAO;
+import com.epam.task3.dao.txt_file.TXTWorkWithNewsDataWorkerDAO;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -15,7 +15,7 @@ import java.util.List;
 
 
 public class TXTFileWorkerDAOTest {
-    private TXTFileWorkerDAO txtFileWorkerDAO;
+    private TXTWorkWithNewsDataWorkerDAO txtFileWorkerDAO;
     private String request ;
     private String pathToDataFileTestSearch;
     private String pathToDataFileTestAdd;
@@ -87,13 +87,13 @@ public class TXTFileWorkerDAOTest {
     @Test (dataProvider = "dataForPositiveSearchTests")
     public void testPositiveSearchNewsInFIle(String data) throws Exception {
         txtFileWorkerDAO.setPathToNewsDataFile(pathToDataFileTestSearch);
-        Assert.assertEquals(news,txtFileWorkerDAO.searchNewsInFIle(data));
+        Assert.assertEquals(news,txtFileWorkerDAO.searchNewsForFreeCriteria(data));
     }
 
     @Test (dataProvider = "dataForNegativeTests")
     public void testNegativeSearchNewsInFIle(String data) throws Exception {
         txtFileWorkerDAO.setPathToNewsDataFile(pathToDataFileTestSearch);
-        Assert.assertTrue(txtFileWorkerDAO.searchNewsInFIle(data).isEmpty());
+        Assert.assertTrue(txtFileWorkerDAO.searchNewsForFreeCriteria(data).isEmpty());
     }
 
     @DataProvider (name = "dataForPositiveAddTests")

@@ -14,7 +14,7 @@ public class AddNews implements Command {
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
         NewsService newsService = serviceFactory.getNewsService();
 
-        if(NewsValidator.newsValidate(request)) {
+        if(NewsValidator.newsValidateBySize(request)) {
             try{
                 newsService.addNews(request);
             } catch (ServiceException e) {

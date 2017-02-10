@@ -3,16 +3,17 @@ package com.epam.task3.service;
 
 import com.epam.task3.bean.News;
 import com.epam.task3.dao.DAOFactory;
-import com.epam.task3.dao.txt_file.TXTFileWorkerDAO;
+import com.epam.task3.dao.database.DBWorker;
 import com.epam.task3.dao.exception.DAOException;
 import com.epam.task3.service.exception.ServiceException;
+import com.epam.task3.service.util.RequestWorker;
 
 import java.util.HashSet;
 
 public class NewsService implements ServiceNews {
 
     private DAOFactory daoFactory = DAOFactory.getInstance();
-    private TXTFileWorkerDAO txtFileWorkerDAO = daoFactory.getTxtFileWorkerDAO();
+    private DBWorker dbWorker = daoFactory.getDbWorker();
 
     /**
      * Take news from controller and give it to DAO layer.
@@ -23,7 +24,7 @@ public class NewsService implements ServiceNews {
     @Override
     public void addNews(String request) throws ServiceException {
         try {
-            txtFileWorkerDAO.addItem(request);
+            dbWorker.addItem(request);
         } catch (DAOException e) {
             throw new ServiceException(e.getMessage());
         }
@@ -37,12 +38,19 @@ public class NewsService implements ServiceNews {
      * @return list of news.
      * @throws ServiceException
      */
+
     @Override
     public HashSet<News> getNews(String request) throws ServiceException {
         try {
-            return txtFileWorkerDAO.searchNewsInFIle(request);
-        } catch ( DAOException e) {
-            throw new ServiceException(e.getMessage());
+            request = RequestWorker.removePunct(request);
+
+            request = request.toLowerCase();
+
+            String[] parameterForTheSearch = request.split(" ");
+
+            return dbWorker.searchNewsForFreeCriteria(parameterForTheSearch);
+        } catch (DAOException e) {
+            throw new ServiceException(e.getMessage(),e);
         }
     }
 

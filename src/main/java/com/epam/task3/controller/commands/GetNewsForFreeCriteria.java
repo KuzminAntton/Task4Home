@@ -9,7 +9,7 @@ import com.epam.task3.service.exception.ServiceException;
 import java.io.IOException;
 
 
-public class GetNews implements Command {
+public class GetNewsForFreeCriteria implements Command {
     @Override
     public String execute(String request) throws ServiceException {
         ServiceFactory serviceFactory = ServiceFactory.getInstance();

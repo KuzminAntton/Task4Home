@@ -8,11 +8,13 @@ public final class NewsValidator {
      * @param news
      * @return true if news is correct.
      */
-    public static boolean newsValidate(String news) {
+    public static boolean newsValidateBySize(String news) {
         boolean res = false;
         if(news.split(",").length == 3) {
             res = true;
         }
         return res;
     }
+
+
 }

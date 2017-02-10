@@ -2,8 +2,9 @@ package com.epam.task3.dao.txt_file;
 
 
 import com.epam.task3.bean.News;
-import com.epam.task3.dao.FileDao;
+import com.epam.task3.dao.WorkWithNewsDataDao;
 import com.epam.task3.dao.exception.DAOException;
+import com.epam.task3.service.util.RequestWorker;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -12,7 +13,7 @@ import java.util.HashSet;
 import java.util.List;
 
 
-public class TXTFileWorkerDAO implements FileDao {
+public class TXTWorkWithNewsDataWorkerDAO implements WorkWithNewsDataDao {
 //    private String pathToNewsDataFile = "C:\\Users\\Anton_Kuzmin\\IdeaProjects\\dataForTask3\\News.doc";
     private String pathToNewsDataFile = "/home/anton/DataSourceForTask3.txt";
 
@@ -23,13 +24,12 @@ public class TXTFileWorkerDAO implements FileDao {
      * @return list of news.
      * @throws DAOException catch exception and throw it on service level.
      */
-    @Override
-    public HashSet<News> searchNewsInFIle(String request) throws DAOException {
+    public HashSet<News> searchNewsForFreeCriteria(String request) throws DAOException {
         HashSet<News> news = new HashSet<>();
         if(request == null) {
             return news;
         } else {
-            request = removePunct(request);
+            request = RequestWorker.removePunct(request);
             request = request.toLowerCase();
             try {
                 List<String> lines = Files.readAllLines(Paths.get(pathToNewsDataFile));
@@ -55,6 +55,11 @@ public class TXTFileWorkerDAO implements FileDao {
         }
     }
 
+    @Override
+    public HashSet<News> searchNewsForFreeCriteria(String[] request) throws DAOException {
+        return null;
+    }
+
     /**
      * Add news in text file.
      *
@@ -75,25 +80,19 @@ public class TXTFileWorkerDAO implements FileDao {
 
     }
 
-    /**
-     * Remove punctuation.
-     *
-     * @param str string in which it is necessary to remove the punctuation
-     * @return String
-     */
 
-    private String removePunct(String str) {
-        StringBuilder result = new StringBuilder(str.length());
-        for (int i = 0; i < str.length(); i++) {
-            char c = str.charAt(i);
-            if (Character.isAlphabetic(c) || Character.isDigit(c) || Character.isSpaceChar(c)) {
-                result.append(c);
-            } else {
-                result.append(" ");
-            }
-        }
-        return result.toString();
-    }
+//    private String removePunct(String str) {
+//        StringBuilder result = new StringBuilder(str.length());
+//        for (int i = 0; i < str.length(); i++) {
+//            char c = str.charAt(i);
+//            if (Character.isAlphabetic(c) || Character.isDigit(c) || Character.isSpaceChar(c)) {
+//                result.append(c);
+//            } else {
+//                result.append(" ");
+//            }
+//        }
+//        return result.toString();
+//    }
 
 
     public String getPathToNewsDataFile() {
