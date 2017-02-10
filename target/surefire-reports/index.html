@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest">
+              <span class="suite-name border-passed">com.epam.task3.test.TXTFileWorkerDAOTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.epam.task3.test.TXTFileWorkerDAOTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" class="hide-methods passed suite-com.epam.task3.test.TXTFileWorkerDAOTest"> (hide)</a> <!-- hide-methods passed suite-com.epam.task3.test.TXTFileWorkerDAOTest -->
+                      <a href="#" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" class="show-methods passed suite-com.epam.task3.test.TXTFileWorkerDAOTest"> (show)</a> <!-- show-methods passed suite-com.epam.task3.test.TXTFileWorkerDAOTest -->
+                    </span>
+                    <div class="method-list-content passed suite-com.epam.task3.test.TXTFileWorkerDAOTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle(CATEGOR)">testNegativeSearchNewsInFIle(CATEGOR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle(,:!@)">testNegativeSearchNewsInFIle(,:!@)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle(tITl)">testNegativeSearchNewsInFIle(tITl)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle()">testNegativeSearchNewsInFIle()</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle(WWW)">testNegativeSearchNewsInFIle(WWW)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle(CREATO)">testNegativeSearchNewsInFIle(CREATO)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testNegativeSearchNewsInFIle(null)">testNegativeSearchNewsInFIle(null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveAddItem(category,title,creator)">testPositiveAddItem(category,title,creator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveAddItem(Category,Title,Creator)">testPositiveAddItem(Category,Title,Creator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveAddItem(CATEGORY,TITLE,CREATOR)">testPositiveAddItem(CATEGORY,TITLE,CREATOR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveAddItem( CATEGORY , TITLE , CREATOR )">testPositiveAddItem( CATEGORY , TITLE , CREATOR )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(Title)">testPositiveSearchNewsInFIle(Title)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(title:creator:category)">testPositiveSearchNewsInFIle(title:creator:category)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(title)">testPositiveSearchNewsInFIle(title)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(Category)">testPositiveSearchNewsInFIle(Category)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(TITLE)">testPositiveSearchNewsInFIle(TITLE)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(title,creator,category)">testPositiveSearchNewsInFIle(title,creator,category)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(CREATOR)">testPositiveSearchNewsInFIle(CREATOR)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(title$creato:categor)">testPositiveSearchNewsInFIle(title$creato:categor)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(Creator)">testPositiveSearchNewsInFIle(Creator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(CATEGORY)">testPositiveSearchNewsInFIle(CATEGORY)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(category)">testPositiveSearchNewsInFIle(category)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(title@@@@@@@@creato:categor)">testPositiveSearchNewsInFIle(title@@@@@@@@creato:categor)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(title,:;&quot;&#039;creato:categor)">testPositiveSearchNewsInFIle(title,:;"'creato:categor)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" title="com.epam.task3.test.TXTFileWorkerDAOTest" hash-for-method="testPositiveSearchNewsInFIle(creator)">testPositiveSearchNewsInFIle(creator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.epam.task3.test.TXTFileWorkerDAOTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel com.epam.task3.test.TXTFileWorkerDAOTest">
+          <div class="suite-com.epam.task3.test.TXTFileWorkerDAOTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.epam.task3.test.TXTFileWorkerDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle(CATEGOR)">
+                  </a> <!-- testNegativeSearchNewsInFIle(CATEGOR) -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">(CATEGOR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle(,:!@)">
+                  </a> <!-- testNegativeSearchNewsInFIle(,:!@) -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">(,:!@)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle(tITl)">
+                  </a> <!-- testNegativeSearchNewsInFIle(tITl) -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">(tITl)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle()">
+                  </a> <!-- testNegativeSearchNewsInFIle() -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">()</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle(WWW)">
+                  </a> <!-- testNegativeSearchNewsInFIle(WWW) -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">(WWW)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle(CREATO)">
+                  </a> <!-- testNegativeSearchNewsInFIle(CREATO) -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">(CREATO)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSearchNewsInFIle(null)">
+                  </a> <!-- testNegativeSearchNewsInFIle(null) -->
+                  <span class="method-name">testNegativeSearchNewsInFIle</span>
+                  <span class="parameters">(null)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveAddItem(category,title,creator)">
+                  </a> <!-- testPositiveAddItem(category,title,creator) -->
+                  <span class="method-name">testPositiveAddItem</span>
+                  <span class="parameters">(category,title,creator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveAddItem(Category,Title,Creator)">
+                  </a> <!-- testPositiveAddItem(Category,Title,Creator) -->
+                  <span class="method-name">testPositiveAddItem</span>
+                  <span class="parameters">(Category,Title,Creator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveAddItem(CATEGORY,TITLE,CREATOR)">
+                  </a> <!-- testPositiveAddItem(CATEGORY,TITLE,CREATOR) -->
+                  <span class="method-name">testPositiveAddItem</span>
+                  <span class="parameters">(CATEGORY,TITLE,CREATOR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveAddItem( CATEGORY , TITLE , CREATOR )">
+                  </a> <!-- testPositiveAddItem( CATEGORY , TITLE , CREATOR ) -->
+                  <span class="method-name">testPositiveAddItem</span>
+                  <span class="parameters">( CATEGORY , TITLE , CREATOR )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(Title)">
+                  </a> <!-- testPositiveSearchNewsInFIle(Title) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(Title)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(title:creator:category)">
+                  </a> <!-- testPositiveSearchNewsInFIle(title:creator:category) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(title:creator:category)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(title)">
+                  </a> <!-- testPositiveSearchNewsInFIle(title) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(title)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(Category)">
+                  </a> <!-- testPositiveSearchNewsInFIle(Category) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(Category)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(TITLE)">
+                  </a> <!-- testPositiveSearchNewsInFIle(TITLE) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(TITLE)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(title,creator,category)">
+                  </a> <!-- testPositiveSearchNewsInFIle(title,creator,category) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(title,creator,category)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(CREATOR)">
+                  </a> <!-- testPositiveSearchNewsInFIle(CREATOR) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(CREATOR)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(title$creato:categor)">
+                  </a> <!-- testPositiveSearchNewsInFIle(title$creato:categor) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(title$creato:categor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(Creator)">
+                  </a> <!-- testPositiveSearchNewsInFIle(Creator) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(Creator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(CATEGORY)">
+                  </a> <!-- testPositiveSearchNewsInFIle(CATEGORY) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(CATEGORY)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(category)">
+                  </a> <!-- testPositiveSearchNewsInFIle(category) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(category)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(title@@@@@@@@creato:categor)">
+                  </a> <!-- testPositiveSearchNewsInFIle(title@@@@@@@@creato:categor) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(title@@@@@@@@creato:categor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(title,:;&quot;&#039;creato:categor)">
+                  </a> <!-- testPositiveSearchNewsInFIle(title,:;"'creato:categor) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(title,:;"'creato:categor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveSearchNewsInFIle(creator)">
+                  </a> <!-- testPositiveSearchNewsInFIle(creator) -->
+                  <span class="method-name">testPositiveSearchNewsInFIle</span>
+                  <span class="parameters">(creator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.epam.task3.test.TXTFileWorkerDAOTest-class-passed -->
+        </div> <!-- panel com.epam.task3.test.TXTFileWorkerDAOTest -->
+        <div panel-name="test-xml-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;com.epam.task3.test.TXTFileWorkerDAOTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.epam.task3.test.TXTFileWorkerDAOTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- com.epam.task3.test.TXTFileWorkerDAOTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.epam.task3.test.TXTFileWorkerDAOTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.epam.task3.test.TXTFileWorkerDAOTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.epam.task3.test.TXTFileWorkerDAOTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.epam.task3.test.TXTFileWorkerDAOTest');
+function tableData_com.epam.task3.test.TXTFileWorkerDAOTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(0, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(0, 3, 16);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(1, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(2, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(3, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(4, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(5, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testPositiveAddItem')
+data.setCell(6, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPositiveAddItem')
+data.setCell(7, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(8, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testPositiveAddItem')
+data.setCell(9, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(10, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(11, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(12, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(13, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(14, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(15, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(16, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(17, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(18, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(19, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(20, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(21, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testPositiveSearchNewsInFIle')
+data.setCell(22, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testPositiveAddItem')
+data.setCell(23, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testNegativeSearchNewsInFIle')
+data.setCell(24, 2, 'com.epam.task3.test.TXTFileWorkerDAOTest')
+data.setCell(24, 3, 0);
+window.suiteTableData['com.epam.task3.test.TXTFileWorkerDAOTest']= { tableData: data, tableDiv: 'times-div-com.epam.task3.test.TXTFileWorkerDAOTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 ms</span>
+              <div id="times-div-com.epam.task3.test.TXTFileWorkerDAOTest">
+              </div> <!-- times-div-com.epam.task3.test.TXTFileWorkerDAOTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.epam.task3.test.TXTFileWorkerDAOTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.epam.task3.test.TXTFileWorkerDAOTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.epam.task3.test.TXTFileWorkerDAOTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle(null)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle()</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle(WWW)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle(,:!@)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle(CATEGOR)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle(CREATO)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSearchNewsInFIle(tITl)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveAddItem(Category,Title,Creator)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveAddItem(category,title,creator)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveAddItem(CATEGORY,TITLE,CREATOR)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveAddItem( CATEGORY , TITLE , CREATOR )</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(Title)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(Creator)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(Category)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(TITLE)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(CATEGORY)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(CREATOR)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(title)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(category)</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(creator)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(title,creator,category)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(title:creator:category)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(title,:;"'creato:categor)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(title$creato:categor)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveSearchNewsInFIle(title@@@@@@@@creato:categor)</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

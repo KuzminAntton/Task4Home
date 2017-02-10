@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.epam.task3.test.TXTFileWorkerDAOTest" duration-ms="79" started-at="2017-02-08T09:16:47Z" finished-at="2017-02-08T09:16:47Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="79" started-at="2017-02-08T09:16:47Z" finished-at="2017-02-08T09:16:47Z">
+      <class name="com.epam.task3.test.TXTFileWorkerDAOTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="setUp" is-config="true" duration-ms="16" started-at="2017-02-08T12:16:47Z" finished-at="2017-02-08T12:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CATEGOR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[,:!@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[WWW]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="16" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CREATO]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Title]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Category]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TITLE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveAddItem(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveAddItem" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveAddTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[category,title,creator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveAddItem -->
+        <test-method status="PASS" signature="testPositiveAddItem(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveAddItem" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveAddTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Category,Title,Creator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveAddItem -->
+        <test-method status="PASS" signature="testPositiveAddItem(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveAddItem" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveAddTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CATEGORY,TITLE,CREATOR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveAddItem -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CREATOR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Creator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CATEGORY]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[category]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testNegativeSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testNegativeSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForNegativeTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tITl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveAddItem(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveAddItem" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveAddTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ CATEGORY , TITLE , CREATOR ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveAddItem -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title:creator:category]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title,creator,category]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title$creato:categor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-02-08T12:16:47Z" finished-at="2017-02-08T12:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title@@@@@@@@creato:categor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title,:;"'creato:categor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+        <test-method status="PASS" signature="testPositiveSearchNewsInFIle(java.lang.String)[pri:0, instance:com.epam.task3.test.TXTFileWorkerDAOTest@7cf10a6f]" name="testPositiveSearchNewsInFIle" duration-ms="0" started-at="2017-02-08T12:16:47Z" data-provider="dataForPositiveSearchTests" finished-at="2017-02-08T12:16:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[creator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveSearchNewsInFIle -->
+      </class> <!-- com.epam.task3.test.TXTFileWorkerDAOTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.epam.task3.test.TXTFileWorkerDAOTest -->
+</testng-results>
