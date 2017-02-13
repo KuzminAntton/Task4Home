@@ -1,4 +1,4 @@
-package com.epam.task3.controller.util;
+package com.epam.task3.util;
 
 public final class NewsValidator {
     /**

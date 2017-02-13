@@ -10,10 +10,10 @@ public class News implements Serializable {
     public News() {
     }
 
-    public News(String category, String name, String creator) {
-        this.category = category;
+    public News(String name, String creator, String category) {
         this.name = name;
         this.creator = creator;
+        this.category = category;
     }
 
     public String getName() {

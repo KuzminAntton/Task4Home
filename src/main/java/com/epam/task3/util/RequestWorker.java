@@ -1,4 +1,4 @@
-package com.epam.task3.service.util;
+package com.epam.task3.util;
 
 public class RequestWorker {
     public static String removePunct(String str) {
@@ -12,5 +12,15 @@ public class RequestWorker {
             }
         }
         return result.toString();
+    }
+
+    public static  String [] getSearchParametersInRequest(String request) {
+        request = RequestWorker.removePunct(request);
+
+        request = request.toLowerCase();
+
+        String[] parameterForTheSearch = request.split(" ");
+
+        return parameterForTheSearch;
     }
 }

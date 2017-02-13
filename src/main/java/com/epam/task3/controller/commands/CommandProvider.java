@@ -1,6 +1,9 @@
 package com.epam.task3.controller.commands;
 
-import com.epam.task3.controller.util.Help;
+import com.epam.task3.controller.commands.add_news.AddNews;
+import com.epam.task3.controller.commands.exit.Exit;
+import com.epam.task3.controller.commands.search_news.*;
+import com.epam.task3.util.Help;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,10 +15,17 @@ public class CommandProvider {
     public CommandProvider() {
 
         repository.put(CommandName.ADD_NEWS, new AddNews());
-        repository.put(CommandName.GET_NEWS, new GetNewsForFreeCriteria());
-        repository.put(CommandName.GET_NEWS_FREE_CRIT, new GetNewsForFreeCriteria());
+        repository.put(CommandName.GET_NEWS_BY_TITLE, new GetNewsByTitle());
+        repository.put(CommandName.GET_NEWS_BY_CREATOR, new GetNewsByCreator());
+        repository.put(CommandName.GET_NEWS_BY_CATEGORY, new GetNewsByCategory());
+        repository.put(CommandName.GET_NEWS_BY_TITLE_AND_CREATOR, new GetNewsByTitleAndCreator());
+        repository.put(CommandName.GET_NEWS_BY_TITLE_AND_CATEGORY, new GetNewsByTitleAndCategory());
+        repository.put(CommandName.GET_NEWS_BY_CREATOR_AND_CATEGORY, new GetNewsByCreatorAndCategory());
+        repository.put(CommandName.GET_CONCRETE_NEWS, new GetConcreteNews());
+        repository.put(CommandName.GET_NEWS_FREE_CRIT, new GetNewsFreeCriteria());
         repository.put(CommandName.WRONG_COMMAND, new WrongCommand());
         repository.put(CommandName.WRONG_REQUEST, new WrongRequest());
+        repository.put(CommandName.EXIT, new Exit());
 
     }
 
